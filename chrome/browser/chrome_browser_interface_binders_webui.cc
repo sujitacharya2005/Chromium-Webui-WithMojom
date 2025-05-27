@@ -143,8 +143,6 @@
 #if !BUILDFLAG(IS_CHROMEOS) && !BUILDFLAG(IS_ANDROID)
 #include "chrome/browser/ui/webui/app_home/app_home.mojom.h"
 #include "chrome/browser/ui/webui/app_home/app_home_ui.h"
-#include "chrome/browser/ui/webui/hello_world/hello_world.mojom.h"
-#include "chrome/browser/ui/webui/hello_world/hello_world_ui.h"
 #include "chrome/browser/ui/webui/signin/profile_customization_ui.h"
 #include "chrome/browser/ui/webui/signin/profile_picker_ui.h"
 #endif  // !BUILDFLAG(IS_CHROMEOS) && !BUILDFLAG(IS_ANDROID)
@@ -1170,10 +1168,6 @@ void PopulateChromeWebUIFrameBinders(
 #if !BUILDFLAG(IS_CHROMEOS) && !BUILDFLAG(IS_ANDROID)
   RegisterWebUIControllerInterfaceBinder<::app_home::mojom::PageHandlerFactory,
                                          webapps::AppHomeUI>(map);
-  RegisterWebUIControllerInterfaceBinder<
-      ::hello_world::mojom::HelloWorldPageHandlerFactory, HelloWorldUI>(map);
-  RegisterWebUIControllerInterfaceBinder<::hello_world::mojom::HelloWorldPage,
-                                         HelloWorldUI>(map);
 #endif  // !BUILDFLAG(IS_CHROMEOS) && !BUILDFLAG(IS_ANDROID)
 
 #if !BUILDFLAG(IS_ANDROID)
