@@ -132,8 +132,12 @@
     "structures": [2460],
   },
   "<(SHARED_INTERMEDIATE_DIR)/chrome/browser/resources/hello/resources.grd": {
-      "META": {"sizes": {"includes": [51]}},
+      "META": {"sizes": {"includes": [8]}},
      "includes": [2461],
+  },
+  "<(SHARED_INTERMEDIATE_DIR)/chrome/browser/resources/hello_world/resources.grd": {
+      "META": {"sizes": {"includes": [8]}},
+     "includes": [2470],
   },
   "chrome/browser/resources/office_web_app/resources.grd": {
     "includes": [2480],

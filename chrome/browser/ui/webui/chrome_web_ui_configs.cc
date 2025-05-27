@@ -187,6 +187,7 @@
 
 #include "base/logging.h"
 #include "chrome/browser/ui/webui/hello/hello_untrusted_ui_config.h"
+#include "chrome/browser/ui/webui/hello_world/hello_world_ui.h"
 
 #if BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX)
 #include "chrome/browser/ui/webui/on_device_translation_internals/on_device_translation_internals_ui.h"
@@ -327,6 +328,7 @@ void RegisterChromeWebUIConfigs() {
 #endif  // BUILDFLAG(IS_ANDROID)
   LOG(WARNING) << "SujitSujit config : HelloUIConfig";
   map.AddWebUIConfig(std::make_unique<HelloUIConfig>());
+  map.AddWebUIConfig(std::make_unique<HelloWorldUIConfig>());
 
 #if BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_CHROMEOS) || BUILDFLAG(IS_OPENBSD)
   map.AddWebUIConfig(std::make_unique<LinuxProxyConfigUI>());

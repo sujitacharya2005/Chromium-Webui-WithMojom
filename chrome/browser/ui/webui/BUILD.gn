@@ -43,7 +43,9 @@ source_set("configs") {
     "//printing/buildflags",
     "//skia",
     "//third_party/abseil-cpp:absl",
-    "hello:hello_ui"
+    "hello:hello_ui",
+    "//chrome/browser/ui/webui/hello_world:mojo_bindings",
+
   ]
 
   if (safe_browsing_mode != 0) {

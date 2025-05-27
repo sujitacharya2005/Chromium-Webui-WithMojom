@@ -3133,6 +3133,11 @@ static_library("ui") {
       "webui/app_home/app_home_page_handler.h",
       "webui/app_home/app_home_ui.cc",
       "webui/app_home/app_home_ui.h",
+       #  Add your hello_world WebUI sources
+      "webui/hello_world/hello_world_page_handler.cc",
+      "webui/hello_world/hello_world_page_handler.h",
+      "webui/hello_world/hello_world_ui.cc",
+      "webui/hello_world/hello_world_ui.h",
       "webui/app_management/web_app_settings_page_handler.cc",
       "webui/app_management/web_app_settings_page_handler.h",
       "webui/app_settings/web_app_settings_navigation_throttle.cc",
@@ -3178,6 +3183,7 @@ static_library("ui") {
       "//services/audio/public/mojom",
       "//services/video_capture/public/mojom",
       "//services/video_effects/buildflags",
+      "//chrome/browser/resources/hello_world:resources",
     ]
 
     # Any circular includes must depend on the target "//chrome/browser:browser_public_dependencies".

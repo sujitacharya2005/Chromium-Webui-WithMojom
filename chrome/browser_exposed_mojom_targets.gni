@@ -11,6 +11,9 @@
 # As for now, we are only listing those targets for interfaces exposed on
 # Linux.
 
+print(">>> SujitSujit mojom exposed.gn")
+
+
 browser_exposed_mojom_targets = [
   "//cc/mojom:layer_type",
   "//cc/mojom:mojom",
@@ -24,6 +27,7 @@ browser_exposed_mojom_targets = [
   "//chrome/browser/resource_coordinator:mojo_bindings",
   "//chrome/browser/ui/webui/access_code_cast:mojo_bindings",
   "//chrome/browser/ui/webui/app_home:mojo_bindings",
+  "//chrome/browser/ui/webui/hello_world:mojo_bindings",
   "//chrome/browser/ui/webui/app_service_internals:mojo_bindings",
   "//chrome/browser/ui/webui/bluetooth_internals:mojo_bindings",
   "//chrome/browser/ui/webui/connectors_internals:mojo_bindings",

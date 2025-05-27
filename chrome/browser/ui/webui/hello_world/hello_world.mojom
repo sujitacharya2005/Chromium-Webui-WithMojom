@@ -1,0 +1,15 @@
+module hello_world.mojom;
+
+interface HelloWorldPage {
+  // You can define browser-to-renderer callbacks here if needed.
+};
+
+interface HelloWorldPageHandler {
+  Greet() => (string message);
+};
+
+interface HelloWorldPageHandlerFactory {
+  CreateHelloWorldPageHandler(
+    pending_remote<HelloWorldPage> page,
+    pending_receiver<HelloWorldPageHandler> handler);
+};
